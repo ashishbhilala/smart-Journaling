@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.journal.smartjournaling">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Smart Journaling"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartJournaling"
+        tools:ignore="ExtraText">
+        <activity
+            android:name=".JournalEntryDetailActivity"
+            android:exported="false" />
+        <!-- Welcome Screen (Launcher) -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Login Screen -->
+        <activity
+            android:name=".LoginActivity"
+            tools:ignore="Instantiatable" /> <!-- Signup Screen -->
+        <activity
+            android:name=".SignupActivity"
+            tools:ignore="Instantiatable" /> <!-- Main Journal Screen -->
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AddEntryActivity" />
+        <activity
+            android:name=".ProfileFragment"
+            tools:ignore="Instantiatable" />
+    </application>
+
+</manifest>

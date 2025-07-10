@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#6200EE</color>
+
+
+    <color name="nav_item_color">#607D8B</color> <!-- Soft Blue-Grey -->
+    <color name="fab_color">#FF4081</color> <!-- Modern Pink FAB -->
+    <color name="fab_ripple_color">#F8BBD0</color> <!-- Light Ripple Effect -->
+
+    <!-- Modern Light Theme Colors -->
+
+    <color name="modern_light_background">#F8F9FA</color>  <!-- Light grayish background -->
+    <color name="modern_primary">#6A89CC</color>  <!-- Soft blue -->
+    <color name="modern_secondary">#B8E994</color>  <!-- Soft green -->
+    <color name="modern_accent">#F6B93B</color>  <!-- Warm yellow -->
+    <color name="modern_text">#2C3E50</color>  <!-- Dark gray for readability -->
+    <color name="modern_placeholder">#A4B0BE</color>  <!-- Light gray for hints -->
+
+    <color name="modern_light_pink">#FFE4E1</color>  <!-- Soft light pink -->
+    <color name="teal_700">#018786</color>
+
+    <color name="primary_background">#FAFAFA</color>
+    <color name="card_color">#FFFFFF</color>
+    <color name="accent_green">#00C853</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="gray_light">#D3D3D3</color>
+</resources>

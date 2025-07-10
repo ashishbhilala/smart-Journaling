@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8E994"
+    tools:context="JournalFragment">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/journalHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/journalIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/feather"
+            android:layout_marginTop="12dp"
+            android:contentDescription="Journal Icon"/>
+
+        <TextView
+            android:id="@+id/journalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Journal"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="12dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <!-- RecyclerView for Journal Entries -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewJournal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="42dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/journalHeader"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
